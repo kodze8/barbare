@@ -79,13 +79,13 @@ body {
 }
 @font-face {
     font-family: 'Merchant';
-    src: url('/fonts/merchant.ttf') format('truetype'); 
+    src: url('../fonts/merchant.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Oldimeter';
-    src: url('/fonts/Swiss721Black\ copy.ttf') format('truetype'); 
+    src: url('../fonts/Swiss721Black\ copy.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
