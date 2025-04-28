@@ -1,0 +1,18 @@
+body {
+    background-color: #ECECEC;
+    background-color: #1E12C7;
+   
+}
+@font-face {
+    font-family: 'Merchant';
+    src: url('../fonts/merchant.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+#error {
+    color: #C30606;
+    font-size: 65px;
+    font-family: "Merchant";
+
+}
