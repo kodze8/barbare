@@ -7,7 +7,7 @@ img.addEventListener('click', function() {
     title.classList.add('move-title');
 
     setTimeout(function() {
-        window.location.href = "/pages/portfolio.html";
+        window.location.href = "../pages/portfolio.html";
     }, 1500); 
 
 });
