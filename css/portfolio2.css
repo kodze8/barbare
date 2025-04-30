@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Merchant';
+    src: url('../fonts/Merchant.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Napzer';
+    src: url('../fonts/Napzer-Regular.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Marvin';
+    src: url('../fonts/marvin.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 .banner{
     width: 100%;
     height: 100vh;
@@ -41,15 +61,12 @@
     position: relative;
 }
 
-
 .banner .slider .item .overlay-text {
     position: absolute;
     inset: 0;
     background-color: #ECECEC;
-
     font-family: 'Marvin';
     font-size: 0.8rem;
-    /* font-weight: bold; */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, background-color 0.3s;
@@ -83,30 +100,7 @@ body {
     background-color: #1E12C7;
     overflow-x: hidden;
 }
-@font-face {
-    font-family: 'Merchant';
-    src: url('../fonts/Merchant.otf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oldimeter';
-    src: url('../fonts/Swiss721Black\ copy.ttf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Napzer';
-    src: url('/fonts/Napzer-Regular.otf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Marvin';
-    src: url('/fonts/marvin.otf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 #title{
     color: #ECECEC;
