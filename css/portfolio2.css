@@ -21,7 +21,12 @@
 }
 
 
-.banner .slider .item {
+
+
+
+
+
+/* .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -32,8 +37,6 @@
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .banner .slider .item img {
     width: 100%;
@@ -50,14 +53,12 @@
     left: 50%;
     width: 250px;
     transform: translate(-50%, -50%);
-    color: #ECECEC;
     font-size: 1rem;
     font-weight: bold;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ;
     text-align: center;
-    /* background-color: gray; */
 }
 
 .banner .slider .item:hover img {
@@ -66,7 +67,67 @@
 
 .banner .slider .item:hover .overlay-text {
     opacity: 1;  
+} */
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: 
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(450px);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+
+.banner .slider .item .overlay-text {
+    position: absolute;
+    inset: 0;
+    background-color: #ECECEC;
+
+    font-family: 'Marvin';
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, background-color 0.3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    transform-style: flat;
+    will-change: transform, opacity;
+}
+.desc{
+    font-family: 'Napzer';
+}
+
+
+.banner .slider .item:hover img {
+    opacity: 0;
+}
+
+.banner .slider .item:hover .overlay-text {
+    opacity: 1;
+    color: #C30606; 
+}
+
 
 
 
@@ -89,6 +150,18 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Napzer';
+    src: url('/fonts/Napzer-Regular.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Marvin';
+    src: url('/fonts/marvin.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 #title{
     color: #ECECEC;
@@ -102,7 +175,6 @@ body {
     margin-top: 20px;
 }
 .overlay-text{
-    color: rebeccapurple;
-    font-family: 'Merchant';
-    
+    color: #ECECEC;
+    font-family: 'Napzer';
 }
