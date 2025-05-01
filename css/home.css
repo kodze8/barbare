@@ -18,7 +18,7 @@ body {
 #title {
     color: #C30606;
     color: #ECECEC;
-    font-size: 50px;
+    font-size: clamp(2rem, 4.5vw, 6rem);
     font-family: "Merchant";
     transition: transform 2s ease-out;
 }
@@ -37,7 +37,7 @@ body {
 
 
 #img {
-    width: 45%;
+    width: clamp(200px, 40vw, 600px);
     height: auto;
     cursor: pointer;
     transition: transform 2s ease-out; 

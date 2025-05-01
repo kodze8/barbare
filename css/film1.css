@@ -20,87 +20,77 @@ body{
     background-color: #ECECEC;
 }
 
-
 #header-container {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 55px;
+    margin-top: 5%;
     position: relative; 
 }
 
 #title-container {
-   
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Merchant';
     color: #C30606;
-    font-size: 0.8rem;
+    font-size: clamp(0.2rem, 0.9vw, 1.5rem);
     text-align: center;
-    padding: 10px;
+    padding: clamp(1px, 50vw, 100px);
     white-space: nowrap; 
 }
 
 .button {
-    min-width: 50px;
-    z-index: 1; 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button:first-child {
-    margin-right: auto;
-    margin-left: 15px;
-
-}
-.button:first-child img{
-    margin-top: -10px;
-}
 
 .button:last-child {
-    margin-right: 90px;
-    margin-top: -30px;
-    background-color: rgba(195, 6, 6, 0.4); 
-    width: 30px;
-    height: 30px;
-    min-width: 20px; 
-    min-height: 20px; 
+    margin-right: clamp(3%, 5vw, 9%); 
+    margin-top: clamp(-3%, -4vw, -3%);
+    background-color: rgba(195, 6, 6, 0.4);
+    width: clamp(3px, 5vw, 40px);   
+    height: clamp(3px, 5vw, 40px);  
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     border-radius: 0;
-    padding: 0; 
-    box-sizing: border-box; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .button:last-child .close-symbol {
     color: #C30606;
     opacity: 1;
-    font-size: 18px;
+    font-size: clamp(14px, 4vw, 18px);  
     line-height: 1;
     position: absolute;
     transform: translate(-50%, -50%);
     padding: 0;
-    display: block; 
+    display: block;
 }
 
 
 
 #video-container{
-    margin-top: 55px;
+    margin-top: 6%;
     display: flex;
-    /* background-color: gray; */
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 #video{
-    width: 75%;
+    width: clamp(100px, 80vw, 1000px);
+    height: auto;
 }
 
 
 #text-container{
-    margin-top: 70px;
+    margin-top: 7%;
     font-family: 'Napzer';
     color:#C30606;
     display: flex;
@@ -109,8 +99,9 @@ body{
 
 .text{
     flex: 1;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin-left: clamp(20px, 5vw, 100px);
+    margin-right: clamp(10px, 3vw, 50px);
+    font-size: 1.4vw;
 }
 
 @keyframes slide {
@@ -123,7 +114,7 @@ body{
     
 }
 #images{
-    margin: 100px 0px 20px 0px;
+    margin: 10% 0 2% 0;
     white-space: nowrap;
     overflow: hidden;
     font-size: 0;
@@ -134,7 +125,6 @@ body{
 
 #images-slide{
     display: inline-block;
-    /* background-color: gray; */
     width: 100%;
     height: auto;
    
@@ -142,14 +132,15 @@ body{
 }
 
 #images-slide img{
-    width: 25%;
+    width: clamp(100px, 25vw, 2000px);
     height: auto;
 }
 
 #links-container{
     display: flex;
-    margin: 100px 60px 20px 60px;
+    margin: clamp(40px, 8vw, 100px) clamp(20px, 6vw, 60px) clamp(10px, 3vw, 20px) clamp(20px, 6vw, 60px);
     justify-content: space-between;
+    font-size: 1.5vw;
 }
 #links-container a{
     color: #C30606;
@@ -161,13 +152,13 @@ body{
 
 #right {
     display: flex;
-    gap: 100px; 
+    gap: 1%; 
 }
 
 #right > div {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 1%; 
 }
 
 #copy-contaiener{
@@ -175,10 +166,14 @@ body{
     font-family: 'Napzer';
     display: flex;
     justify-content: center;
-    margin: 80px 0px 10px 0px;
+    margin: clamp(40px, 8vw, 80px) 0 clamp(5px, 2vw, 10px) 0;
+    font-size: clamp(0.4rem, 1vw, 1.2rem);
    
 }
 
 
 
 
+
+
+ 
