@@ -14,7 +14,7 @@ img.addEventListener('click', triggerAnimationAndRedirect);
 
 document.addEventListener('keydown', function(event) {
     if (event.code === 'Space') {
-        event.preventDefault(); 
+        // event.preventDefault(); 
         triggerAnimationAndRedirect();
     }
 })
