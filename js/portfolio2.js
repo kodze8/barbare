@@ -1,3 +1,8 @@
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+  history.go(1);
+};
+
 const slider = document.querySelector('.slider');
 // const text = document.getElementById('text');
 const items = document.querySelectorAll('.item');
