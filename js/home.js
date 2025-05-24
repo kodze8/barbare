@@ -13,19 +13,19 @@ function triggerAnimationAndRedirect() {
 }
 
 
-// img.addEventListener('click', triggerAnimationAndRedirect);
-img.addEventListener('keydown', function(event) {
-    txt.textContent = event.code
-    if (event.key === ' ' || event.code === 'Space') {
-        event.preventDefault();
-        triggerAnimationAndRedirect();
-    }
-})
+img.addEventListener('click', triggerAnimationAndRedirect);
+// img.addEventListener('keydown', function(event) {
+//     txt.textContent = event.code
+//     if (event.key === ' ' || event.code === 'Space') {
+//         event.preventDefault();
+//         triggerAnimationAndRedirect();
+//     }
+// })
 
-document.addEventListener('keydown', function(event) {
-    txt.textContent = event.code
-    if (event.key === ' ' || event.code === 'Space') {
-        event.preventDefault();
-        triggerAnimationAndRedirect();
-    }
-})
+// document.addEventListener('keydown', function(event) {
+//     txt.textContent = event.code
+//     if (event.key === ' ' || event.code === 'Space') {
+//         event.preventDefault();
+//         triggerAnimationAndRedirect();
+//     }
+// })
