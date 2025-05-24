@@ -21,9 +21,7 @@
 /* ADDED */
 html, body {
     overscroll-behavior-x: contain;
-    overflow-x: hidden; /* You already have this */
 }
-
 
 .banner{
     width: 100%;

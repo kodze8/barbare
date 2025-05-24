@@ -1,8 +1,6 @@
 const img = document.getElementById('img');
 const title = document.getElementById('title');
 
-const txt = document.getElementById("test")
-
 function triggerAnimationAndRedirect() {
     img.classList.add('move-img');
     title.classList.add('move-title');
