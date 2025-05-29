@@ -1,51 +1,33 @@
-// const slider = document.querySelector('#images-slide');
-// const images = slider.querySelectorAll('img');
-// const imageWidth = images[0].clientWidth;
-
-// function cloneImages() {
-//   images.forEach(img => {
-//     const clone = img.cloneNode(true);
-//     slider.appendChild(clone);
-//   });
-// }
-
-// cloneImages();
-
-// let currentPosition = 0;
-// const speed = 1; // pixels per frame
-
-// function animate() {
-//   currentPosition -= speed;
-  
-//   // Reset position when we've scrolled one full set of images
-//   if (Math.abs(currentPosition) >= imageWidth * images.length) {
-//     currentPosition = 0;
-//   }
-  
-//   slider.style.transform = `translateX(${currentPosition}px)`;
-//   requestAnimationFrame(animate);
-// }
-
-// animate();
-
 const slider = document.getElementById('images-slide');
 const images = slider.querySelectorAll('img');
-const sliderWidth = slider.scrollWidth / 2; // Since we duplicate images
+const imageWidth = images[0].clientWidth; 
+const sliderWidth = imageWidth * images.length / 2; 
 
 let currentPosition = 0;
-const speed = 1; // Adjust speed (lower = slower)
+const speed = 0.6;
+let animationId;
 
 function animate() {
   currentPosition -= speed;
   
-  // Reset before reaching the end to avoid a visible jump
   if (Math.abs(currentPosition) >= sliderWidth) {
     currentPosition = 0;
+    slider.style.transition = 'none';
+    slider.style.transform = `translateX(${currentPosition}px)`;
+    void slider.offsetWidth;
   }
   
   slider.style.transform = `translateX(${currentPosition}px)`;
-  requestAnimationFrame(animate);
+  slider.style.transition = 'transform 0.05s linear'; 
+  animationId = requestAnimationFrame(animate);
 }
 
-// Start animation
 animate();
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    cancelAnimationFrame(animationId);
+  } else {
+    animate();
+  }
+});

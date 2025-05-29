@@ -23,11 +23,13 @@
         </div>
     </div>
     
-
-    <div id="video-container">
-        <img  id="video" src="../images/foto1.jpg "alt="">
-
+    
+    <div id="video-container" class="video-wrapper">
+        <img id="video" src="../images/foto1.jpg" alt="Click to watch video">
+        <div class="play-button"></div>
     </div>
+
+
 
 
     <div id="text-container">
@@ -116,6 +118,20 @@
         <p > &copy; Copyright 2025 Barbare Saikodze. All rights reserved. </p>
     </div>
     <script src="../js/image_slide.js"></script>
+
+    <script>
+        function playVideo() {
+            const container = document.getElementById("video-container");
+            container.innerHTML = `
+            <iframe class="responsive-video"
+                    src="https://www.youtube.com/embed/mQaqg-Z7i3M?autoplay=1"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>`;
+        }
+        document.getElementById("video").addEventListener("click", playVideo);
+        document.querySelector(".play-button").addEventListener("click", playVideo);
+    </script>
+
 
 
 </body>
