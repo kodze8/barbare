@@ -75,7 +75,6 @@ body{
 }
 
 
-
 #video-container{
     margin-top: 6%;
     display: flex;
@@ -94,7 +93,6 @@ body{
     font-family: 'Napzer';
     color:#C30606;
     display: flex;
-
 }
 
 .text{
@@ -104,41 +102,30 @@ body{
     font-size: 1.4vw;
 }
 
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-    
-}
-#images{
-    margin: 10% 0 2% 0;
-    white-space: nowrap;
+
+
+#images {
+    margin-top: 10vh;
     overflow: hidden;
-    font-size: 0;
-    padding: 0;
-    background-color: gray;
-    
 }
 
-#images-slide{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-   
-    animation: slide 15s linear infinite;
+#images-slide {
+  display: flex;
+   will-change: transform; /* Improves performance */
 }
 
-#images-slide img{
-    width: clamp(100px, 25vw, 2000px);
-    height: auto;
-}
+
+#images-slide img {
+  width: clamp(100px, 25vw, 2000px);
+  height: auto;
+  flex-shrink: 0;
+} 
+
 
 #links-container{
+  
     display: flex;
-    margin: clamp(40px, 8vw, 100px) clamp(20px, 6vw, 60px) clamp(10px, 3vw, 20px) clamp(20px, 6vw, 60px);
+    margin: clamp(60px, 8vw, 100px) clamp(20px, 6vw, 60px) clamp(10px, 3vw, 20px) clamp(20px, 6vw, 60px);
     justify-content: space-between;
     font-size: 1.5vw;
 }
