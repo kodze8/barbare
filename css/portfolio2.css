@@ -18,6 +18,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rooms';
+    src: url('../fonts/rooms.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ADDED */
 html, body {
     overscroll-behavior-x: contain;
@@ -74,7 +81,7 @@ html, body {
     position: absolute;
     inset: 0;
     background-color: #ECECEC;
-    font-family: 'Marvin';
+    font-family: 'Rooms';
     font-size: 0.8rem;
     opacity: 0;
     pointer-events: none;
@@ -125,4 +132,41 @@ body {
 .overlay-text{
     color: #ECECEC;
     font-family: 'Napzer';
+}
+
+
+
+
+
+#item-container {
+  height: 100vh;           
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+  margin-top: -10%;   
+}
+
+#item-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* background-color: gray; */
+  /* text-align: center; */
+  font-family: "Rooms";
+}
+
+#item-container ul li {
+  margin: 20px 0;
+}
+
+#item-container ul li a {
+  text-decoration: none;
+  color: #C30606;
+  font-size: 4rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+#item-container ul li a:hover {
+  transform: scale(1.1);
 }

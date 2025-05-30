@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Too Old</title>
+    <link rel="stylesheet" href="../css/film1.css">
+</head>
+<body>
+
+    <div id="header-container">
+        <div class="button">
+        </div>
+    
+        <div id="title-container">
+            <h1>Never Too Old [short film]</h1>
+        </div>
+    
+        <div class="button">
+            <a href="../pages/portfolio.html" id="close">
+                <span class="close-symbol">×</span>
+            </a>
+        </div>
+    </div>
+    
+    
+    <div id="video-container" class="video-wrapper">
+        <img id="video" src="../images/never_too_old/cover.jpg" alt="Click to watch video">
+        <div class="play-button"></div>
+    </div>
+
+
+
+
+    <div id="text-container">
+        <div class="text" >
+            <p>
+                Director: Barbare Saikodze <br><br>
+
+                Screenplay adapted by: <br>
+                Barbare Saikodze & Freya Willems<br><br>
+
+                Based on the idea by: <br>
+                Sandor Marton Ivo Duarte Orsolya Hollo<br><br>
+
+                Producer: Bente de Vries<br>
+                First AD: Vanesa Vrablova<br>
+                Director of Photography: Mees de Wilde<br>
+                Production Design: Freya Willems<br>
+                Editor: Vanesa Vrablova<br>
+                Assistant Editor: Barbare Saikodze<br>
+                Sound Design: Freya Willems<br><br>
+                Music: <br><br>
+                "Tain't Nobody's Biz-ness if I Do"<br>
+                Lyrics by: Porter Grainger & Everett Robbins<br>
+                Music by: Jimmy Witherspoon & Jay McShann<br>
+                Performed by: Jay McShann<br><br>
+                
+                "Shades of Spring"<br>
+                Music by: Kevin MacLeod<br>
+                Performed by: Kevin MacLeod<br>
+                Licensed under Creative Commons Attribution 4.0 International<br><br>
+
+                "Aleksandre Kiladze's Jazz Choral"<br>
+                Music by: Aleksandre Kiladze<br>
+                Leno Records<br>
+                Performed by: Jazz Choral<br>
+                Courtesy of: Manana Darsavelidze<br><br>
+
+                The producers gratefully acknowledge and wish to thank the following for their assistance<br>
+                De Petrus Library<br>
+                Giel Tuns<br>
+                Eetcafe 't Geveltje <br>
+              </p>
+        </div>
+
+        <div class="text">
+            <p>Professor Turner's Valentine's Day doesn't go as planned when he loses the perfect gift for his wife while on his way to their date, sparking a race against time to find a replacement and save the night.
+            </p>    
+            <br>
+            <p>Winner of Best Directing award at BUas Short Film Festival.</p>
+        </div>
+
+    </div>
+
+
+    <div id="images">
+        <div id="images-slide">
+            <img src="../images/never_too_old/film1.png" alt="">
+            <img src="../images/never_too_old/film2.png" alt="">
+            <img src="../images/never_too_old/film3.png" alt="">
+            <img src="../images/never_too_old/film5.png" alt="">
+            <img src="../images/never_too_old/film4.png" alt="">
+            <img src="../images/never_too_old/film6.png" alt="">
+            <img src="../images/never_too_old/film7.png" alt="">
+            <img src="../images/never_too_old/film8.png" alt="">
+            <img src="../images/never_too_old/film9.png" alt="">
+            <img src="../images/never_too_old/film10.png" alt="">
+            
+            <img src="../images/never_too_old/film1.png" alt="">
+            <img src="../images/never_too_old/film2.png" alt="">
+            <img src="../images/never_too_old/film3.png" alt="">
+            <img src="../images/never_too_old/film5.png" alt="">
+            <img src="../images/never_too_old/film4.png" alt="">
+            <img src="../images/never_too_old/film6.png" alt="">
+            <img src="../images/never_too_old/film7.png" alt="">
+            <img src="../images/never_too_old/film8.png" alt="">
+            <img src="../images/never_too_old/film9.png" alt="">
+            <img src="../images/never_too_old/film10.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <div id="links-container">
+        <div class="links" id="left">
+            <a href="">reasons <br> not to hire me</a>
+        </div>
+
+        <div class="links" id="right">
+            <div >
+                <a href="/pages/portfolio.html">Films, Prints, Sights</a>
+                <a href="">resume</a>
+                <a href="">About</a>
+
+            </div >
+
+            <div>
+                <a href="https://www.linkedin.com/in/barbare-saikodze-22490a251/">Linkedin</a>
+                <a href="https://open.spotify.com/user/3167do22rwplbcjpplh7i2hnalgq?si=948f222125bb4be1">Spotify</a>
+
+            </div>
+        </div>
+       
+    </div>
+
+
+
+    <div id="copy-contaiener">
+        <p > &copy; Copyright 2025 Barbare Saikodze. All rights reserved. </p>
+    </div>
+    <script src="../js/image_slide.js"></script>
+
+    <script>
+        function playVideo() {
+            const container = document.getElementById("video-container");
+            container.innerHTML = `
+            <iframe class="responsive-video"
+                    src="https://www.youtube.com/embed/_O205uzNkFw?autoplay=1"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>`;
+        }
+        document.getElementById("video").addEventListener("click", playVideo);
+        document.querySelector(".play-button").addEventListener("click", playVideo);
+    </script>
+
+
+
+</body>
+</html>

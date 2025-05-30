@@ -4,7 +4,7 @@ const imageWidth = images[0].clientWidth;
 const sliderWidth = imageWidth * images.length / 2; 
 
 let currentPosition = 0;
-const speed = 0.6;
+const speed = 0.5;
 let animationId;
 
 function animate() {

@@ -7,10 +7,47 @@
     <link rel="stylesheet" href="../css/portfolio2.css">
 </head>
 <body>
+    <div id="title-container" style=" position: relative; text-align: center; margin-top: 2%;">
+    <h1 id="title">films, prints, sights</h1>
 
-    <div id="title-container">
-        <h1 id="title">films, prints,  sights</h1>
+    <div id="menu-toggle" onclick="toggleMenu()"
+        style=" position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+            width: 30px; height: 24px; cursor: pointer; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; gap: 4px; margin-top: -2%; margin-right: 0%;">
+        <span style="height: 3px; width: 100%; background: #ECECEC; transition: 0.3s;"></span>
+        <span style="height: 3px; width: 100%; background: #ECECEC; transition: 0.3s;"></span>
+        <span style="height: 3px; width: 100%; background: #ECECEC; transition: 0.3s;"></span>
     </div>
+    </div>
+
+
+    <!-- Side Menu -->
+    <div id="side-menu"
+            style="position: fixed; top: 0; right: -100vw; height: 100vh; width: 100vw; background: #ECECEC;
+                    box-shadow: -2px 0 5px rgba(0,0,0,0.3); transition: right 0.3s ease; z-index: 999;">
+
+        <!-- Close Button -->
+        <span onclick="toggleMenu()"
+                style="position: absolute; top: 20px; right: 30px; font-size: 2rem; cursor: pointer;">×</span>
+
+        <div id="item-container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../images/cv.pdf">Resume</a></li>
+                <li><a href="../pages/error.html">Why You should not hire me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("side-menu");
+            menu.style.right = menu.style.right === "0px" ? "-100vw" : "0px";
+        }
+    </script>
+
+
+
 
     <div class="banner">
         <div class="slider" style="--quantity: 6">
@@ -69,10 +106,10 @@
             <!-- I WOOD -->
             <div class="item" style="--position: 6">
                 <a href="i_wood.html" class="img-link">
-                    <img class="img" src="../images/foto6.png" alt="">
+                    <img class="img" src="../images/iwood/Photo2.png" alt="">
                 </a>
                 <div class="overlay-text">
-                    <p>I, WOOD: INSIDE DIEDERICK KRAAIJEVELD’S PRACTICE<br>SHORT DOCUMENTARY CONCEPT REEL]</p>
+                    <p>I, WOOD: INSIDE DIEDERICK KRAAIJEVELD’S PRACTICE<br>[SHORT DOCUMENTARY]</p>
                 </div>
             </div>
         </div>
