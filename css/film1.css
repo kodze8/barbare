@@ -163,17 +163,21 @@ body{
 
 
 #text-container{
+    /* background-color: gray; */
     margin-top: 7%;
     font-family: 'Napzer';
     color:#C30606;
     display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .text{
     flex: 1;
-    margin-left: clamp(20px, 5vw, 100px);
-    margin-right: clamp(10px, 3vw, 50px);
     font-size: 1.4vw;
+}
+  #second{
+  text-align: justify;
 }
 
 
@@ -198,35 +202,51 @@ body{
 } 
 
 
+
+
+#links-container a:hover {
+    text-decoration: underline;
+    font-style: italic;
+} 
+
+
 #links-container{
-    
+  /* background-color: gray; */
+    margin-top: 12%;
     display: flex;
-    margin: clamp(60px, 8vw, 100px) clamp(20px, 6vw, 60px) clamp(10px, 3vw, 20px) clamp(20px, 6vw, 60px);
     justify-content: space-between;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    margin-left: 2%;
+    margin-right: 2%; 
 }
+
 #links-container a{
     color: #C30606;
     text-decoration: none;
     font-family: 'Napzer';
 }
 
-#links-container a:hover {
-    text-decoration: underline;
-    font-style: italic;
-}
 
 
 #right {
-    display: flex;
-    gap: 1%; 
+    /* background-color: gray; */
+    display: flex;    
+     width: 20%;
 }
+#right-left{
+    /* background-color: green; */
+    margin-right: 20%;
+}
+
 
 #right > div {
     display: flex;
     flex-direction: column;
     gap: 1%; 
 }
+
+
+
 
 #copy-contaiener{
     color: #C30606;
