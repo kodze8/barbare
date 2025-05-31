@@ -168,15 +168,16 @@ body{
     font-family: 'Napzer';
     color:#C30606;
     display: flex;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .text{
     flex: 1;
     font-size: 1.4vw;
 }
-  #second{
+#second{
+  margin-left: 3%;
   text-align: justify;
 }
 
