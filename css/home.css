@@ -37,7 +37,8 @@ body {
 
 
 #img {
-    width: clamp(200px, 40vw, 600px);
+    /* width: clamp(200px, 40vw, 600px); */
+    width: clamp(300px, 40vw, 600px);
     height: auto;
     cursor: pointer;
     transition: transform 2s ease-out; 
