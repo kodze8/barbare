@@ -4,7 +4,6 @@ window.onpopstate = function () {
 };
 
 const slider = document.querySelector('.slider');
-// const text = document.getElementById('text');
 const items = document.querySelectorAll('.item');
 const quantity = parseInt(getComputedStyle(slider).getPropertyValue('--quantity'));
 
